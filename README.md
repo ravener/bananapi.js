@@ -1,4 +1,8 @@
 # BananAPI.js
+[![Install size](https://packagephobia.now.sh/badge?p=bananapi)](https://
+packagephobia.now.sh/result?p=bananapi)
+[![npm](https://img.shields.io/npm/v/bananapi.svg)](https://npmjs.com/package/bananapi)
+
 A wrapper to use the [https://bananapi.ml](https://bananapi.ml) API which has some fun endpoints
 
 ## Install
