@@ -62,7 +62,8 @@ const api = new BananAPI.Client({ token: process.env.TOKEN });
     api.abandon("hello"),
     api.alert("hello"),
     api.legends("hello"),
-    api.sleeptight("hello")
+    api.sleeptight("hello"),
+    api.humansgood("hello")
   ]);
   let counter = 0;
   for(const buffer of buffers) {

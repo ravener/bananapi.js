@@ -41,6 +41,15 @@ class Client {
   }
 
   /**
+   * Humans are good
+   * @param {String} text - Why humans are good
+   * @returns {Buffer}
+   */
+  humansgood(text) {
+    return this._get("/humansgood", { text });
+  }
+
+  /**
    * Make.your((text) => JavaScript());
    * @param {String} text - The text to JavaScriptify
    * @returns {Promise<String>}

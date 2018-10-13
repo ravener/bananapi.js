@@ -44,5 +44,20 @@ const image = await api.disabled("something");
 message.channel.send(new MessageAttachment(image, "file.png"));
 ```
 
+## TypeScript
+TypeScript typings gets installed by default, you can use it straight with TypeScript and even if you are not the typings gives a nice intellisense code suggestion on editors like Visual Studio Code
+
+Here is an example using TypeScript
+```typescript
+import { Client } from "bananapi";
+
+const client: Client = new Client({ token: "my token" });
+
+client.reverse("TypeScript")
+  .then((reversed: string) => {
+    console.log(reversed); // => tpircSepyT
+  });
+```
+
 ## License
 MIT
