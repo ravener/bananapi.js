@@ -12,7 +12,7 @@
     "url": "git+https://github.com/freetnt5852/bananapi.js.git"
   },
   "dependencies": {
-    "ladybug-fetch": "github:freetnt5852/ladybug-fetch"
+    "ladybug-fetch": "^0.0.2"
   },
   "keywords": [
     "bananapi",

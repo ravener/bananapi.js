@@ -50,6 +50,24 @@ class Client {
   }
 
   /**
+   * You've met that one person with autism
+   * @param {String} text - What the person have that made him have autism?
+   * @returns {Buffer}
+   */
+  autism(text) {
+    return this._get("/autism", { text });
+  }
+
+  /**
+   * Oof headache
+   * @param {String} text - Explain what gives headache
+   * @returns {Buffer}
+   */
+  headache(text) {
+    return this._get("/headache", { text });
+  }
+
+  /**
    * Make.your((text) => JavaScript());
    * @param {String} text - The text to JavaScriptify
    * @returns {Promise<String>}

@@ -24,6 +24,9 @@ declare module "bananapi" {
     public legends(text: string): Promise<Buffer>;
     public abandon(text: string): Promise<Buffer>;
     public alert(text: string): Promise<Buffer>;
+    public humansgood(text: string): Promise<Buffer>;
+    public headache(text: string): Promise<Buffer>;
+    public autism(text: string): Promise<Buffer>;
     public eightball(question: string): Promise<Eightball>;
   }
 }
