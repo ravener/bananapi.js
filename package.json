@@ -1,6 +1,6 @@
 {
   "name": "bananapi",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "API wrapper for https://bananapi.ml",
   "main": "./src/index.js",
   "scripts": {
