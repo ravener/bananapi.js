@@ -30,7 +30,25 @@ class Client {
      */
     this.url = "https://bananapi.ml/api";
   }
-
+  
+  /**
+   * Stay awake
+   * @param {String} text - The text to use
+   * @returns {Promise<Buffer>}
+   */
+  stayawake(text) {
+    return this._get("/stayawake", { text });
+  }
+  
+  /**
+   * Say something to hurt
+   * @param {String} text - The text to use
+   * @returns {Promise<Buffer>}
+   */
+  hurt(text) {
+    return this._get("/hurt", { text });
+  }
+  
   /**
    * Tweet something as trump
    * @param {String} text - The text to tweet
