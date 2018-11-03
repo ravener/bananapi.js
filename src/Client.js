@@ -30,7 +30,25 @@ class Client {
      */
     this.url = "https://bananapi.ml/api";
   }
-
+  
+  /**
+   * Stay awake
+   * @param {String} text - The text to use
+   * @returns {Promise<Buffer>}
+   */
+  stayawake(text) {
+    return this._get("/stayawake", { text });
+  }
+  
+  /**
+   * Say something to hurt
+   * @param {String} text - The text to use
+   * @returns {Promise<Buffer>}
+   */
+  hurt(text) {
+    return this._get("/hurt", { text });
+  }
+  
   /**
    * Tweet something as trump
    * @param {String} text - The text to tweet
@@ -139,7 +157,27 @@ class Client {
   alert(text) {
     return this._get("/alert", { text });
   }
+  
+   /**
+   * S P I T O N H I M
+   * @param {String} firstImage - First image to spit
+   * @param2 {String} secondImage - Second image to spit
+   * @returns {Promise<Buffer>}
+   */
+  spit(firstImage, secondImage) {
+    return this._get("/spit", { firstImage, secondImage });
+  }
 
+   /**
+   * You r e t a r d e d?
+   * @param {String} image - What to make retarded
+   * @returns {Promise<Buffer>}
+   */
+  retarded(image) {
+    return this._get("/retarded", { image });
+  }
+    
+    
   /**
    * Pings the API for response time
    * @returns {Promise<Number>}
