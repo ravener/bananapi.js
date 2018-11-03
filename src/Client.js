@@ -157,7 +157,27 @@ class Client {
   alert(text) {
     return this._get("/alert", { text });
   }
+  
+   /**
+   * S P I T O N H I M
+   * @param {String} firstImage - First image to spit
+   * @param2 {String} secondImage - Second image to spit
+   * @returns {Promise<Buffer>}
+   */
+  spit(firstImage, secondImage) {
+    return this._get("/spit", { firstImage, secondImage });
+  }
 
+   /**
+   * You r e t a r d e d?
+   * @param {String} image - What to make retarded
+   * @returns {Promise<Buffer>}
+   */
+  retarded(image) {
+    return this._get("/retarded", { image });
+  }
+    
+    
   /**
    * Pings the API for response time
    * @returns {Promise<Number>}
