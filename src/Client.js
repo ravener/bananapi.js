@@ -172,7 +172,7 @@ class Client {
    * @param {String} image - What to make retarded
    * @returns {Promise<Buffer>}
    */
-  alert(image) {
+  retarded(image) {
     return this._get("/retarded", { image });
   }
     
