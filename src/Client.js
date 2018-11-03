@@ -157,6 +157,27 @@ class Client {
   alert(text) {
     return this._get("/alert", { text });
   }
+  
+  
+   /**
+   * S P I T O N H I M
+   * @param {String} img - Image to spit
+   * @returns {Promise<Buffer>}
+   */
+  spit(img) {
+    return this._get("/spit", { img });
+  }
+  
+  /**
+   * Retarded.
+   * @param {String} text - What to become retarded
+   * @returns {Promise<Buffer>}
+   */
+  retarded(text) {
+    return this._get("/retarded", { text });
+  }
+
+
 
   /**
    * Pings the API for response time
