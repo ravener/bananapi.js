@@ -166,6 +166,7 @@ class Client {
    */
   spit(firstImage, secondImage) {
     return this._get("/spit", { firstImage, secondImage });
+  }
 
    /**
    * You r e t a r d e d?
