@@ -169,7 +169,16 @@ class Client {
   }
 
    /**
-   * You r e t a r d e d?
+   * Noted!
+   * @param {String} image - What to make retarded
+   * @returns {Promise<Buffer>}
+   */
+  note(image) {
+    return this._get("/note", { image });
+  }
+
+   /**
+   * Oh no, hes retarded!
    * @param {String} image - What to make retarded
    * @returns {Promise<Buffer>}
    */
@@ -195,7 +204,7 @@ class Client {
    */
   reverse(text) {
     return this._get("/reverse", { text }).then((body) => body.text);
-  }
+  } 
 
   /**
    * Asks 8ball a question
