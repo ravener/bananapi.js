@@ -169,13 +169,23 @@ class Client {
   }
 
    /**
-   * Noted!
-   * @param {String} image - What to make retarded
+   * [passes note] ur weeb
+   * @param {String} text - What to note
    * @returns {Promise<Buffer>}
    */
-  note(image) {
-    return this._get("/note", { image });
+  note(text) {
+    return this._get("/note", { text });
   }
+  
+   /**
+   * I found it! The scroll of truth! ur weeb! NYEH!
+   * @param {String} text - What to make the scroll of truth say
+   * @returns {Promise<Buffer>}
+   */
+  scroll(text) {
+    return this._get("/scroll", { text });
+  }
+
 
    /**
    * Oh no, hes retarded!
