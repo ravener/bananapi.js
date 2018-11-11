@@ -174,7 +174,7 @@ class Client {
    * @returns {Promise<Buffer>}
    */
   note(text) {
-    return this._get("/note", { image });
+    return this._get("/note", { text });
   }
   
    /**
