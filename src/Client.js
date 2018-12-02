@@ -185,6 +185,17 @@ class Client {
   scroll(text) {
     return this._get("/scroll", { text });
   }
+  
+  
+   /**
+   * Facts; ur weebabo
+   * @param {String} text - What to make the book say.
+   * @returns {Promise<Buffer>}
+   */
+  facts(text) {
+    return this._get("/facts", { text });
+  }
+
 
 
    /**
