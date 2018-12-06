@@ -2,7 +2,7 @@
 [![install size](https://packagephobia.now.sh/badge?p=bananapi)](https://packagephobia.now.sh/result?p=bananapi)
 [![npm](https://img.shields.io/npm/v/bananapi.svg)](https://npmjs.com/package/bananapi)
 
-A wrapper to use the [https://bananapi.ml](https://bananapi.ml) API which has some fun endpoints
+A wrapper made for BananAPI ([https://bananapi.ml](https://bananapi.ml)), which is a fun API based on image manipulation.
 
 ## Install
 ```sh
@@ -10,7 +10,7 @@ npm install bananapi
 ```
 
 ## API Key
-You need a key to use this API to get one, we use [discordapp](https://discordapp.com) to manage users and give out api keys so to apply you need to join our discord server using the link [https://discord.gg/3Nxb7yZ](https://discord.gg/3Nxb7yZ) and once your in run `b.apply` command by sending it in chat
+You need a key to use BananAPI. We use [Discord](https://discordapp.com) to manage API keys, so to apply, you need to join our Discord server by clicking the link: [https://discord.gg/3Nxb7yZ](https://discord.gg/3Nxb7yZ). Once you joined, run the command `b.apply` by sending it in chat. The bot will DM you and you will be instructed along the application process.
 
 ## Usage
 ```sh
@@ -35,7 +35,7 @@ const api = new BananAPI.Client({ token: "Your Token Goes here" });
 });
 ```
 
-Discord.js example, sending attachments
+Discord.js example (Sending attachments)
 
 ```js
 // Note we required both but you need just one depending on your version
@@ -48,9 +48,9 @@ message.channel.send(new MessageAttachment(image, "file.png"));
 ```
 
 ## TypeScript
-TypeScript typings gets installed by default, you can use it straight with TypeScript and even if you are not the typings gives a nice intellisense code suggestion on editors like Visual Studio Code
+TypeScript typings get installed by default. You can use it straight with TypeScript. Even if you don't need the typings, it gives a nice IntelliSense code suggestion on editors like Visual Studio Code.
 
-Here is an example using TypeScript
+TypeScript example:
 ```typescript
 import { Client } from "bananapi";
 
