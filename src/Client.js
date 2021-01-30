@@ -169,7 +169,37 @@ class Client {
   }
 
    /**
-   * You r e t a r d e d?
+   * [passes note] ur weeb
+   * @param {String} text - What to note
+   * @returns {Promise<Buffer>}
+   */
+  note(text) {
+    return this._get("/note", { text });
+  }
+  
+   /**
+   * I found it! The scroll of truth! ur weeb! NYEH!
+   * @param {String} text - What to make the scroll of truth say
+   * @returns {Promise<Buffer>}
+   */
+  scroll(text) {
+    return this._get("/scroll", { text });
+  }
+  
+  
+   /**
+   * Facts; ur weebabo
+   * @param {String} text - What to make the book say.
+   * @returns {Promise<Buffer>}
+   */
+  facts(text) {
+    return this._get("/facts", { text });
+  }
+
+
+
+   /**
+   * Oh no, hes retarded!
    * @param {String} image - What to make retarded
    * @returns {Promise<Buffer>}
    */
@@ -195,7 +225,7 @@ class Client {
    */
   reverse(text) {
     return this._get("/reverse", { text }).then((body) => body.text);
-  }
+  } 
 
   /**
    * Asks 8ball a question
