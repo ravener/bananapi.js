@@ -4,6 +4,8 @@
 
 A wrapper to use the [https://bananapi.ml](https://bananapi.ml) API which has some fun endpoints
 
+> **Note:** This service has long been shutdown and so this repository is not maintained and has been archived
+
 ## Install
 ```sh
 npm install bananapi
